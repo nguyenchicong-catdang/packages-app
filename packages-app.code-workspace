@@ -12,6 +12,12 @@
       "name": "PACKAGES-SRC",
       "path": "../packages-src",
     },
+    {
+      "name": "->> PACKAGES-WP",
+      "path": "../packages-src/wp",
+    },
   ],
-	"settings": {}
+	"settings": {
+    "intelephense.files.exclude": ["**/setup/**", "**/.git/**"],
+  }
 }
