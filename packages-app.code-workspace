@@ -8,6 +8,10 @@
       "name": "PACKAGES-APP",
       "path": ".",
     },
+    {
+      "name": "PACKAGES-SRC",
+      "path": "../packages-src",
+    },
   ],
 	"settings": {}
 }
