@@ -1,8 +1,13 @@
 {
 	"folders": [
-		{
-			"path": "."
-		}
-	],
+    {
+      "name": "DOCUMENT",
+      "path": "../document",
+    },
+    {
+      "name": "PACKAGES-APP",
+      "path": ".",
+    },
+  ],
 	"settings": {}
 }
