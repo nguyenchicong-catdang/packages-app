@@ -14,7 +14,7 @@
     },
     {
       "name": "PROJECT SRC",
-      "path": "./laravel-app/vendor/vendor-path/package-src", // Đây là /home/cong/git/packages-app
+      "path": "./laravel-app/vendor/vendor-path/packages-src", // Đây là /home/cong/git/packages-app
     },
   ],
   "settings": {
