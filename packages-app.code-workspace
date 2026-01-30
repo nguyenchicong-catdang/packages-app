@@ -1,9 +1,9 @@
 {
   "folders": [
-    {
-      "name": "RUN SETUP",
-      "path": "./packages-src", // Đây là /home/cong/git/packages-app
-    },
+    // {
+    //   "name": "RUN SETUP",
+    //   "path": "./packages-src", // Đây là /home/cong/git/packages-app
+    // },
     {
       "name": "DOCUMENT",
       "path": "../document", // Đây là /home/cong/git/packages-app
@@ -19,7 +19,7 @@
   ],
   "settings": {
     "files.exclude": {
-      // "packages-src": true, // Ẩn thư mục thật để không bấm nhầm vào đó gây báo đỏ
+      "packages-src": true, // Ẩn thư mục thật để không bấm nhầm vào đó gây báo đỏ
     },
     "intelephense.environment.includePaths": [
       "laravel-app",
