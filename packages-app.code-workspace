@@ -1,23 +1,34 @@
 {
-	"folders": [
+  "folders": [
+    {
+      "name": "RUN SETUP",
+      "path": "./packages-src", // Đây là /home/cong/git/packages-app
+    },
     {
       "name": "DOCUMENT",
-      "path": "../document",
+      "path": "../document", // Đây là /home/cong/git/packages-app
     },
     {
-      "name": "PACKAGES-APP",
-      "path": ".",
+      "name": "FULL-PROJECT",
+      "path": ".", // Đây là /home/cong/git/packages-app
     },
     {
-      "name": "PACKAGES-SRC",
-      "path": "../packages-src",
-    },
-    {
-      "name": "->> PACKAGES-WP",
-      "path": "../packages-src/wp",
+      "name": "PROJECT SRC",
+      "path": "./laravel-app/vendor/vendor-path/package-src", // Đây là /home/cong/git/packages-app
     },
   ],
-	"settings": {
-    "intelephense.files.exclude": ["**/setup/**", "**/.git/**"],
-  }
+  "settings": {
+    "files.exclude": {
+      // "packages-src": true, // Ẩn thư mục thật để không bấm nhầm vào đó gây báo đỏ
+    },
+    "intelephense.environment.includePaths": [
+      "laravel-app",
+      "laravel-app/vendor",
+    ],
+    "intelephense.files.exclude": [
+      "**/node_modules/**",
+      // Chặn quét folder gốc để chỉ tập trung vào code trong laravel-app/vendor (nơi có symlink)
+      "packages-src/**",
+    ],
+  },
 }
