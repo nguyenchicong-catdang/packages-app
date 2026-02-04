@@ -16,10 +16,10 @@
       "name": "PROJECT SRC",
       "path": "./laravel-app/vendor/vendor-path/packages-src", // Đây là /home/cong/git/packages-app
     },
-    {
-      "name": "PROJECT WP PLUGIN",
-      "path": "./wp-app/wp-content/plugins/laravel-sidebar-html"
-    }
+    // {
+    //   "name": "PROJECT WP PLUGIN",
+    //   "path": "./wp-app/wp-content/plugins"
+    // }
   ],
   "settings": {
     "files.exclude": {
