@@ -20,6 +20,10 @@
     //   "name": "PROJECT WP PLUGIN",
     //   "path": "./wp-app/wp-content/plugins"
     // }
+    {
+      "name": "--> PACKAGES WP",
+      "path": "./laravel-app/vendor/vendor-path/packages-src/wp", // Đây là /home/cong/git/packages-app
+    },
   ],
   "settings": {
     "files.exclude": {
