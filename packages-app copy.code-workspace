@@ -27,18 +27,16 @@
   ],
   "settings": {
     "files.exclude": {
-      "packages-src": true,
+      "packages-src": true, // Ẩn thư mục thật để không bấm nhầm vào đó gây báo đỏ
     },
-    // Chỉ dùng Intelephense thì dùng prefix này
-    "intelephense.environment.includePaths": ["laravel-app/vendor"],
+    "intelephense.environment.includePaths": [
+      "laravel-app",
+      "laravel-app/vendor",
+    ],
     "intelephense.files.exclude": [
       "**/node_modules/**",
-      "**/adminer/**",
-      "**/wp-app/**",
-      // KHÔNG exclude packages-src ở đây nếu bạn muốn nó quét code trong đó
+      // Chặn quét folder gốc để chỉ tập trung vào code trong laravel-app/vendor (nơi có symlink)
+      "packages-src/**",
     ],
-    "intelephense.telemetry.enabled": false,
-    // Giúp Intelephense nhận diện class nhanh hơn trong môi trường WSL
-    // "intelephense.runtime": "php",
   },
 }
